@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ArConSe - We Build. We Design. We Sell.</title>
+    <meta name="description" content="ArConSe provides professional construction, design, and sustainable energy solutions in Silang, Cavite, Philippines. Solar installation, water treatment, and more." />
+    <meta name="author" content="Lovable" />
+    <meta property="og:title" content="ArConSe - We Build. We Design. We Sell." />
+    <meta property="og:description" content="Professional construction, design, and sustainable energy solutions in Silang, Cavite, Philippines." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@Lovable" />
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        background: 'hsl(var(--background))',
+                        foreground: 'hsl(var(--foreground))',
+                        primary: {
+                            DEFAULT: 'hsl(var(--primary))',
+                            foreground: 'hsl(var(--primary-foreground))'
+                        },
+                        secondary: {
+                            DEFAULT: 'hsl(var(--secondary))',
+                            foreground: 'hsl(var(--secondary-foreground))'
+                        },
+                        border: 'hsl(var(--border))',
+                        input: 'hsl(var(--input))',
+                        ring: 'hsl(var(--ring))',
+                    },
+                    borderRadius: {
+                        lg: 'var(--radius)',
+                        md: 'calc(var(--radius) - 2px)',
+                        sm: 'calc(var(--radius) - 4px)'
+                    },
+                    fontFamily: {
+                        sans: ["Inter", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom CSS -->
+    <style>
+        :root {
+            --background: 0 0% 100%;
+            --foreground: 24 7% 14%;
+            --primary: 24 95% 54%;
+            --primary-foreground: 0 0% 100%;
+            --secondary: 24 20% 96%;
+            --secondary-foreground: 24 7% 14%;
+            --border: 24 20% 88%;
+            --input: 24 20% 88%;
+            --ring: 24 95% 54%;
+            --radius: 0.75rem;
+        }
+        
+        * {
+            border-color: hsl(var(--border));
+        }
+        
+        body {
+            background-color: hsl(var(--background));
+            color: hsl(var(--foreground));
+            font-family: 'Inter', sans-serif;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+        }
+        
+        .btn-primary {
+            background-color: hsl(var(--primary));
+            color: hsl(var(--primary-foreground));
+            padding: 0.75rem 1.5rem;
+            border-radius: var(--radius);
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+        }
+        
+        .section-padding {
+            padding: 5rem 0;
+        }
+        
+        .container-custom {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+    </style>
+</head>
+
+<body class="min-h-screen bg-background">
+    <!-- Header (Will be filled from Header.tsx) -->
+    <header class="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+        <div class="container-custom flex h-16 items-center justify-between">
+            <div class="flex items-center gap-2">
+                <div class="h-8 w-8 rounded-full bg-primary"></div>
+                <span class="text-xl font-bold">ArConSe</span>
+            </div>
+            <nav class="hidden md:flex items-center gap-6">
+                <a href="#home" class="text-sm font-medium hover:text-primary transition-colors">Home</a>
+                <a href="#services" class="text-sm font-medium hover:text-primary transition-colors">Services</a>
+                <a href="#projects" class="text-sm font-medium hover:text-primary transition-colors">Projects</a>
+                <a href="#products" class="text-sm font-medium hover:text-primary transition-colors">Products</a>
+                <a href="#contact" class="text-sm font-medium hover:text-primary transition-colors">Contact</a>
+            </nav>
+            <button class="btn-primary">Get Quote</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="section-padding">
+        <div class="container-custom">
+            <div class="max-w-3xl mx-auto text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">We Build. We Design. We Sell.</h1>
+                <p class="text-xl text-muted-foreground mb-8">Professional construction, design, and sustainable energy solutions in Silang, Cavite, Philippines.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#contact" class="btn-primary px-8 py-3 text-lg">Get Started</a>
+                    <a href="#services" class="px-8 py-3 text-lg border border-input rounded-lg hover:bg-secondary transition-colors">Our Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section-padding bg-secondary">
+        <div class="container-custom">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Our Services</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-background p-6 rounded-lg border">
+                    <div class="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                        <i class="fas fa-solar-panel text-primary text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Solar Installation</h3>
+                    <p class="text-muted-foreground">Sustainable energy solutions for homes and businesses.</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="bg-background p-6 rounded-lg border">
+                    <div class="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                        <i class="fas fa-tools text-primary text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Construction</h3>
+                    <p class="text-muted-foreground">Quality building and renovation services.</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="bg-background p-6 rounded-lg border">
+                    <div class="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                        <i class="fas fa-water text-primary text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Water Treatment</h3>
+                    <p class="text-muted-foreground">Clean water solutions for residential and commercial use.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="section-padding">
+        <div class="container-custom">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Our Products</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Product cards would go here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-padding bg-secondary">
+        <div class="container-custom">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Recent Projects</h2>
+            <!-- Project showcase would go here -->
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION - This is the most important part -->
+    <section id="contact" class="section-padding">
+        <div class="container-custom">
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Contact Info -->
+                <div>
+                    <h2 class="text-3xl font-bold mb-8">Get In Touch</h2>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-map-marker-alt text-primary"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold mb-1">Office Address</h3>
+                                <p class="text-muted-foreground">LG-C, Fullerton Suites, Orchard Drive, Silang, Cavite, Philippines 4885</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-envelope text-primary"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold mb-1">Email Address</h3>
+                                <p class="text-muted-foreground">arconse.ic@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-phone text-primary"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold mb-1">Phone Numbers</h3>
+                                <p class="text-muted-foreground">0916-693-8001</p>
+                                <p class="text-muted-foreground">0917-204-3104</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-clock text-primary"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold mb-1">Business Hours</h3>
+                                <p class="text-muted-foreground">Monday - Friday: 8:00 AM - 6:00 PM</p>
+                                <p class="text-muted-foreground">Saturday: 9:00 AM - 2:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div>
+                    <h2 class="text-3xl font-bold mb-8">Send Us a Message</h2>
+                    
+                    <form id="contactForm" action="https://formsubmit.co/arconse.ic@gmail.com" method="POST" class="space-y-6">
+                        <!-- FormSubmit Configuration -->
+                        <input type="hidden" name="_subject" value="New Contact Form Submission - ArConSe">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_next" value="https://yourusername.github.io/arconse-landing/thank-you.html">
+                        
+                        <div>
+                            <label for="inquiry-type" class="block text-sm font-medium mb-2">Inquiry Type</label>
+                            <select id="inquiry-type" name="Inquiry Type" required class="w-full px-4 py-3 border border-input rounded-lg focus:ring-2 focus:ring-ring focus:border-transparent">
+                                <option value="">Select inquiry type</option>
+                                <option value="General Inquiry">General Inquiry</option>
+                                <option value="Solar Installation">Solar Installation</option>
+                                <option value="Construction">Construction</option>
+                                <option value="Water Treatment">Water Treatment</option>
+                                <option value="Product Inquiry">Product Inquiry</option>
+                                <option value="Partnership">Partnership</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="name" class="block text-sm font-medium mb-2">Your Name</label>
+                            <input type="text" id="name" name="Name" placeholder="Your Name" required class="w-full px-4 py-3 border border-input rounded-lg focus:ring-2 focus:ring-ring focus:border-transparent">
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-sm font-medium mb-2">Email Address</label>
+                            <input type="email" id="email" name="Email" placeholder="Email Address" required class="w-full px-4 py-3 border border-input rounded-lg focus:ring-2 focus:ring-ring focus:border-transparent">
+                        </div>
+                        
+                        <div>
+                            <label for="phone" class="block text-sm font-medium mb-2">Phone Number</label>
+                            <input type="tel" id="phone" name="Phone" placeholder="Phone Number" class="w-full px-4 py-3 border border-input rounded-lg focus:ring-2 focus:ring-ring focus:border-transparent">
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-sm font-medium mb-2">Tell us about your project...</label>
+                            <textarea id="message" name="Message" rows="5" required class="w-full px-4 py-3 border border-input rounded-lg focus:ring-2 focus:ring-ring focus:border-transparent"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary w-full py-3 text-lg">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t py-8">
+        <div class="container-custom">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center gap-2 mb-4 md:mb-0">
+                    <div class="h-8 w-8 rounded-full bg-primary"></div>
+                    <span class="text-lg font-bold">ArConSe</span>
+                </div>
+                <p class="text-muted-foreground">&copy; 2024 ArConSe. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Form submission handling
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+            
+            // Show loading state
+            submitBtn.textContent = 'Sending...';
+            submitBtn.disabled = true;
+            
+            // FormSubmit will handle the actual submission
+            // Reset button after 5 seconds (in case of error)
+            setTimeout(() => {
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+            }, 5000);
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
